@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "980627358665",
+    "project_id": "healingtime-658db",
+    "storage_bucket": "healingtime-658db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980627358665:android:c389f85dd1cb42585dde18",
+        "android_client_info": {
+          "package_name": "com.example.healing_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980627358665-djmbf84hu7fplrhrec8jdpkiqtm616vi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.healing_project",
+            "certificate_hash": "cf91f16a0f065cf9885bd460dc14d0f272fb19d9"
+          }
+        },
+        {
+          "client_id": "980627358665-um7vrdtp2b2jrir1nnoqcs8bhioedh4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj33CZDSo3yt-O6fyGymgpzcINdTEfDh8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980627358665-um7vrdtp2b2jrir1nnoqcs8bhioedh4o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
