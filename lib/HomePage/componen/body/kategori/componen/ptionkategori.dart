@@ -12,30 +12,32 @@ class optionKategori extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-        onTap: () {
-          Get.toNamed(link);
-        },
-        child: Container(
-            width: double.infinity,
-            child: Row(
-              
-              children: [
-                Image(
-                  image: AssetImage(img),
-                  width: 50,
-                  height: 50,
-                ),
-                SizedBox(width: 20,)  ,
-                              Text(
-                  title,
-                  style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.black,
-                      fontFamily: "fonts/Poppins-Medium.ttf",fontWeight: FontWeight.bold),
-                )
-              ],
+      onTap: () {
+        Navigator.pushNamed(context, link);
+      },
+      child: Container(
+        width: double.infinity,
+        child: Row(
+          children: [
+            Image(
+              image: AssetImage(img),
+              width: 50,
+              height: 50,
             ),
-          ),
-        );
+            SizedBox(
+              width: 20,
+            ),
+            Text(
+              title,
+              style: TextStyle(
+                  fontSize: 15,
+                  color: Colors.black,
+                  fontFamily: "fonts/Poppins-Medium.ttf",
+                  fontWeight: FontWeight.bold),
+            )
+          ],
+        ),
+      ),
+    );
   }
 }

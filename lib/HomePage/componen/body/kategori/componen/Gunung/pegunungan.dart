@@ -5,8 +5,6 @@ import 'package:healing_project/HomePage/componen/headder/title.dart';
 
 import '../optionWisata.dart';
 
-
-
 class Gunung extends StatefulWidget {
   const Gunung({Key? key}) : super(key: key);
 
@@ -18,15 +16,7 @@ class _GunungState extends State<Gunung> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:AppBar(
-          leading: IconButton(
-              onPressed: () {
-                Get.toNamed('pagekategori');
-              },
-              icon: Icon(
-                Icons.arrow_back,
-                color: Colors.white,
-              )),
+        appBar: AppBar(
           title: Text(
             "Wisata Pegunungan",
             style: TextStyle(
@@ -36,109 +26,111 @@ class _GunungState extends State<Gunung> {
                 fontWeight: FontWeight.bold),
           ),
           actions: [
-          IconButton(
-            icon: Icon(
-              Icons.search,
-              color: Colors.white,
-            ),
-            onPressed: () {Get.toNamed("Search");},
-          )
-        ],
+            IconButton(
+              icon: Icon(
+                Icons.search,
+                color: Colors.white,
+              ),
+              onPressed: () {
+                Get.toNamed("Search");
+              },
+            )
+          ],
           backgroundColor: Color(0xff5C40CC),
         ),
         body: Container(
             child: ListView(
-      children: [
-        Column(children: [
-          OptionWisata(
-              nomer: "1.  ",
-              imageUrl: "images/Gpapandayan.jpg",
-              title: "Gunung\nPapandayan",
-              lokasi: "Garut",
-              rate: "55",
-              link: "detailpage"),
-          SizedBox(
-            height: 10,
-          ),
-         OptionWisata(
-              nomer: "2.  ",
-              imageUrl: "images/Psayangheulang.jpeg",
-              title: "Wisata\nCurug Taraje",
-              lokasi: "Garut ",
-              rate: "52",
-              link: "detailpage"),
-          SizedBox(
-            height: 10,
-          ),
-          OptionWisata(
-              nomer: "3.  ",
-              imageUrl: "images/Ljurig.jpeg",
-              title: "Wisata\nLewi Juig",
-              lokasi: "Garut ",
-              rate: "55",
-              link: "link"),
-          SizedBox(
-            height: 10,
-          ),
-          OptionWisata(
-              nomer: "4.  ",
-              imageUrl: "images/pantairancabuaya.jpg",
-              title: "Pantai\nRanca Buaya",
-              lokasi: "Garut Slatan",
-              rate: "55",
-              link: "link"),
-          SizedBox(
-            height: 10,
-          ),
-          OptionWisata(
-              nomer: "5.  ",
-              imageUrl: "images/Psayangheulang.jpeg",
-              title: "Pantai\nsayang heulang",
-              lokasi: "Garut Slatan",
-              rate: "55",
-              link: "link"),
-          SizedBox(
-            height: 10,
-          ),
-          OptionWisata(
-              nomer: "6.  ",
-              imageUrl: "images/Gpapandayan.jpg",
-              title: "Gunung\nPapandayan",
-              lokasi: "Garut ",
-              rate: "55",
-              link: "link"),
-          SizedBox(
-            height: 10,
-          ),
-          OptionWisata(
-              nomer: "7.  ",
-              imageUrl: "images/situbagendit.jpg",
-              title: "Situ Bagendit",
-              lokasi: "Garut Slatan",
-              rate: "55",
-              link: "link"),
-          SizedBox(
-            height: 10,
-          ),
-          OptionWisata(
-              nomer: "8.  ",
-              imageUrl: "images/SabdaAlam.jpeg",
-              title: "Sabda Alam",
-              lokasi: "Garut",
-              rate: "55",
-              link: "link"),
-          SizedBox(
-            height: 10,
-          ),
-          OptionWisata(
-              nomer: "9.  ",
-              imageUrl: "images/Talagabodas.jpg",
-              title: "Talaga Bodas",
-              lokasi: "Garut Slatan",
-              rate: "55",
-              link: "link"),
-        ])
-      ],
-    )));
+          children: [
+            Column(children: [
+              OptionWisata(
+                  nomer: "1.  ",
+                  imageUrl: "images/Gpapandayan.jpg",
+                  title: "Gunung\nPapandayan",
+                  lokasi: "Garut",
+                  rate: "55",
+                  link: "detailpage"),
+              SizedBox(
+                height: 10,
+              ),
+              OptionWisata(
+                  nomer: "2.  ",
+                  imageUrl: "images/Psayangheulang.jpeg",
+                  title: "Wisata\nCurug Taraje",
+                  lokasi: "Garut ",
+                  rate: "52",
+                  link: "detailpage"),
+              SizedBox(
+                height: 10,
+              ),
+              OptionWisata(
+                  nomer: "3.  ",
+                  imageUrl: "images/Ljurig.jpeg",
+                  title: "Wisata\nLewi Juig",
+                  lokasi: "Garut ",
+                  rate: "55",
+                  link: "detailpage"),
+              SizedBox(
+                height: 10,
+              ),
+              OptionWisata(
+                  nomer: "4.  ",
+                  imageUrl: "images/pantairancabuaya.jpg",
+                  title: "Pantai\nRanca Buaya",
+                  lokasi: "Garut Slatan",
+                  rate: "55",
+                  link: "detailpage"),
+              SizedBox(
+                height: 10,
+              ),
+              OptionWisata(
+                  nomer: "5.  ",
+                  imageUrl: "images/Psayangheulang.jpeg",
+                  title: "Pantai\nsayang heulang",
+                  lokasi: "Garut Slatan",
+                  rate: "55",
+                  link: "detailpage"),
+              SizedBox(
+                height: 10,
+              ),
+              OptionWisata(
+                  nomer: "6.  ",
+                  imageUrl: "images/Gpapandayan.jpg",
+                  title: "Gunung\nPapandayan",
+                  lokasi: "Garut ",
+                  rate: "55",
+                  link: "detailpage"),
+              SizedBox(
+                height: 10,
+              ),
+              OptionWisata(
+                  nomer: "7.  ",
+                  imageUrl: "images/situbagendit.jpg",
+                  title: "Situ Bagendit",
+                  lokasi: "Garut Slatan",
+                  rate: "55",
+                  link: "detailpage"),
+              SizedBox(
+                height: 10,
+              ),
+              OptionWisata(
+                  nomer: "8.  ",
+                  imageUrl: "images/SabdaAlam.jpeg",
+                  title: "Sabda Alam",
+                  lokasi: "Garut",
+                  rate: "55",
+                  link: "detailpage"),
+              SizedBox(
+                height: 10,
+              ),
+              OptionWisata(
+                  nomer: "9.  ",
+                  imageUrl: "images/Talagabodas.jpg",
+                  title: "Talaga Bodas",
+                  lokasi: "Garut Slatan",
+                  rate: "55",
+                  link: "detailpage"),
+            ])
+          ],
+        )));
   }
 }

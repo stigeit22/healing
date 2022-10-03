@@ -97,7 +97,7 @@ class untukAnda extends StatelessWidget {
                             Row(
                               children: <Widget>[
                                 homeOption(
-                                  link: "",
+                                  link: "detailpage",
                                   imageUrl: "images/SabdaAlam.jpeg",
                                   title: "Sabda Alam",
                                   lokasi: "Tarogong Kidul",
@@ -106,7 +106,7 @@ class untukAnda extends StatelessWidget {
                                 Row(
                                   children: <Widget>[
                                     homeOption(
-                                      link: "",
+                                      link: "detailpage",
                                       imageUrl: "images/Ljurig.jpeg",
                                       title: "Lewi Jurig",
                                       lokasi: "Garut ",
@@ -117,7 +117,7 @@ class untukAnda extends StatelessWidget {
                                 Row(
                                   children: <Widget>[
                                     homeOption(
-                                      link: "",
+                                      link: "detailpage",
                                       imageUrl: "images/Ctaraje.png",
                                       title: "Curug Taraje",
                                       lokasi: "Garut ",
@@ -128,7 +128,7 @@ class untukAnda extends StatelessWidget {
                                 Row(
                                   children: <Widget>[
                                     homeOption(
-                                      link: "",
+                                      link: "detailpage",
                                       imageUrl: "images/pantairancabuaya.jpg",
                                       title: "Pantai Ranca Buaya",
                                       lokasi: "Garut Slatan",
@@ -139,7 +139,7 @@ class untukAnda extends StatelessWidget {
                                 Row(
                                   children: <Widget>[
                                     homeOption(
-                                      link: "",
+                                      link: "detailpage",
                                       imageUrl: "images/Gpapandayan.jpg",
                                       title: "Gunung Papandayan",
                                       lokasi: "Garut ",
@@ -177,7 +177,7 @@ class untukAnda extends StatelessWidget {
                         child: Row(
                           children: <Widget>[
                             homeOption(
-                              link: "",
+                              link: "detailpage",
                               imageUrl: "images/pantairancabuaya.jpg",
                               title: "Pantai Ranca Buaya",
                               lokasi: "Garut Slatan",
@@ -186,7 +186,7 @@ class untukAnda extends StatelessWidget {
                             Row(
                               children: <Widget>[
                                 homeOption(
-                                  link: "",
+                                  link: "detailpage",
                                   imageUrl: "images/Gpapandayan.jpg",
                                   title: "Gunung Papandayan",
                                   lokasi: "Garut ",
@@ -195,7 +195,7 @@ class untukAnda extends StatelessWidget {
                                 Row(
                                   children: <Widget>[
                                     homeOption(
-                                      link: "",
+                                      link: "detailpage",
                                       imageUrl: "images/Ctaraje.png",
                                       title: "Curug Taraje",
                                       lokasi: "Garut ",
@@ -266,7 +266,7 @@ class untukAnda extends StatelessWidget {
                         child: Row(
                           children: <Widget>[
                             homeOption(
-                              link: "",
+                              link: "detailpage",
                               imageUrl: "images/situbagendit.jpg",
                               title: "Situ Bagendit",
                               lokasi: "Kadungora",
@@ -275,7 +275,7 @@ class untukAnda extends StatelessWidget {
                             Row(
                               children: <Widget>[
                                 homeOption(
-                                  link: "",
+                                  link: "detailpage",
                                   imageUrl: "images/kmuarasunda.jpg",
                                   title: "RM Muara Sunda",
                                   lokasi: "Garut ",
@@ -284,7 +284,7 @@ class untukAnda extends StatelessWidget {
                                 Row(
                                   children: <Widget>[
                                     homeOption(
-                                      link: "",
+                                      link: "detailpage",
                                       imageUrl: "images/psebrotan.jpg",
                                       title: "PantaiKarang Sebrotan",
                                       lokasi: "Garut Slatan",
@@ -295,7 +295,7 @@ class untukAnda extends StatelessWidget {
                                 Row(
                                   children: <Widget>[
                                     homeOption(
-                                      link: "",
+                                      link: "detailpage",
                                       imageUrl: "images/psancang.jpg",
                                       title: "Pantai Karang Sancang",
                                       lokasi: "Garut Slatan",
@@ -306,7 +306,7 @@ class untukAnda extends StatelessWidget {
                                 Row(
                                   children: <Widget>[
                                     homeOption(
-                                      link: "",
+                                      link: "detailpage",
                                       imageUrl: "images/klounghe.jpg",
                                       title: "Kuliner Cargo Kitchen",
                                       lokasi: "Garut ",
@@ -317,7 +317,7 @@ class untukAnda extends StatelessWidget {
                                 Row(
                                   children: <Widget>[
                                     homeOption(
-                                      link: "",
+                                      link: "detailpage",
                                       imageUrl: "images/image 19.png",
                                       title: "Ramayana",
                                       lokasi: "Bali",
@@ -328,7 +328,7 @@ class untukAnda extends StatelessWidget {
                                 Row(
                                   children: <Widget>[
                                     homeOption(
-                                      link: "",
+                                      link: "detailpage",
                                       imageUrl: "images/image 19.png",
                                       title: "Ramayana",
                                       lokasi: "Bali",

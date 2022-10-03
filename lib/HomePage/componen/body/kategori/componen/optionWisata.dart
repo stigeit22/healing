@@ -25,7 +25,7 @@ class OptionWisata extends StatelessWidget {
       padding: const EdgeInsets.all(10),
       child: GestureDetector(
         onTap: () {
-          Get.toNamed(link);
+          Navigator.pushNamed(context, link);
         },
         child: Container(
           height: 80,
@@ -45,7 +45,6 @@ class OptionWisata extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Row(
-                
                 children: [
                   Container(
                     margin: EdgeInsets.only(right: 10, left: 10),
@@ -94,31 +93,27 @@ class OptionWisata extends StatelessWidget {
                             ),
                           ],
                         ),
-                       
                       ],
                     ),
                   ),
-                 
                 ],
               ),
-                Container(
-                    margin: EdgeInsets.only(right: 20),
-                    child: 
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(Icons.star, color: Colors.yellow),
-                            Text(
-                              rate,
-                              style: TextStyle(
-                                  fontSize: 14,
-                                  color: Color(0xff1F1449),
-                                  fontFamily: "fonts/Poppins-Medium.ttf"),
-                            ),
-                         
-                      ],
+              Container(
+                margin: EdgeInsets.only(right: 20),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.star, color: Colors.yellow),
+                    Text(
+                      rate,
+                      style: TextStyle(
+                          fontSize: 14,
+                          color: Color(0xff1F1449),
+                          fontFamily: "fonts/Poppins-Medium.ttf"),
                     ),
-                  ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),

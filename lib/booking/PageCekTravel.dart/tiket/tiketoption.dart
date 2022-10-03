@@ -31,7 +31,7 @@ class tiketoption extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Get.toNamed(link);
+        Navigator.pushNamed(context, link);
       },
       child: Padding(
         padding: const EdgeInsets.all(8.0),

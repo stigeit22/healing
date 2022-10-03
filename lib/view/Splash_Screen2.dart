@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:healing_project/onboarding/onboarding.dart';
 import 'package:healing_project/view/GetStarted.dart';
 
 import '../HomePage/HomePage.dart';
@@ -23,7 +24,7 @@ class _Splash2State extends State<Splash2> {
     var duration = const Duration(seconds: 3);
     return Timer(duration, () {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => GetStarted()));
+          context, MaterialPageRoute(builder: (context) => onboarding()));
     });
   }
 
@@ -31,11 +32,35 @@ class _Splash2State extends State<Splash2> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        height: double.infinity,
         width: double.infinity,
+        height: double.infinity,
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('images/adventure.png'), fit: BoxFit.cover)),
+                image: AssetImage("images/garut.png"), fit: BoxFit.cover)),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              padding: EdgeInsets.only(top: 100, left: 10),
+              child: Column(
+                children: [
+                  Text(
+                    'Healing_ Time',
+                    style: TextStyle(fontSize: 32, color: Color(0xffFFFFFF)),
+                  ),
+                  Text(
+                    'Adventure Exploler',
+                    style: TextStyle(fontSize: 24, color: Color(0xffFFFFFF)),
+                  ),
+                  Text(
+                    'Rasakan Kebebasan Anda',
+                    style: TextStyle(fontSize: 16, color: Color(0xffFFFFFF)),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

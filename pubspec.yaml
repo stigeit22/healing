@@ -51,6 +51,8 @@ dependencies:
   syncfusion_flutter_datepicker: ^20.2.36
   in_app_review: ^2.0.4
   app_review: ^2.1.2+1
+  uuid: ^3.0.6
+  rounded_loading_button: ^2.1.0
   
 
 dev_dependencies:

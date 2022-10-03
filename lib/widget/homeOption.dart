@@ -13,14 +13,14 @@ class homeOption extends StatelessWidget {
     required this.title,
     required this.link,
     required this.lokasi,
-     required this.rate,
+    required this.rate,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
         onTap: () {
-          Get.toNamed(link);
+          Navigator.pushNamed(context, link);
         },
         child: Container(
           height: 166,
@@ -39,7 +39,6 @@ class homeOption extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Column(
-                
                 children: <Widget>[
                   ClipRRect(
                     borderRadius: BorderRadius.circular(15),
@@ -49,59 +48,54 @@ class homeOption extends StatelessWidget {
                       height: 125,
                     ),
                   ),
-                   Container(
+                  Container(
                     margin: EdgeInsets.only(left: 10),
-                     child: Column(
-                       crossAxisAlignment: CrossAxisAlignment.start,
-
-                       children: [
-                         Text(
-                  title,
-                  style: TextStyle(
-                            fontSize: 18,
-                            color: Color(0xff1F1449),
-                            fontFamily: "fonts/Poppins-Medium.ttf"),
-              ),
-              Row(
-                    
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                
-              Text(
-                  lokasi,
-                  style: TextStyle(
-                      fontSize: 14,
-                      color: Color(0xff9698A9),
-                      fontFamily: "fonts/Poppins-Light.ttf"),
-              ),
-              Container(
-                margin: EdgeInsets.only(right: 10),
-                child: Row(children: [
- Icon(Icons.star, color: Colors.yellow,size: 15,),
-                               
-                              Text(
-                                  rate,
-                                  style: TextStyle(
-                                      fontSize: 12,
-                                      color: Color(0xff1F1449),
-                                      fontFamily: "fonts/Poppins-Medium.ttf"),
-                                ),
-                ],),
-              )
-   
-                            
-                      
-               
-                  ],),
-                       ],
-                     ),
-                   ),
-               
-               
-                  
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          title,
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Color(0xff1F1449),
+                              fontFamily: "fonts/Poppins-Medium.ttf"),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              lokasi,
+                              style: TextStyle(
+                                  fontSize: 14,
+                                  color: Color(0xff9698A9),
+                                  fontFamily: "fonts/Poppins-Light.ttf"),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(right: 10),
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.yellow,
+                                    size: 15,
+                                  ),
+                                  Text(
+                                    rate,
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        color: Color(0xff1F1449),
+                                        fontFamily: "fonts/Poppins-Medium.ttf"),
+                                  ),
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
-              
             ],
           ),
         ));
