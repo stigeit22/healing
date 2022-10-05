@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/widgets.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -8,23 +9,20 @@ import 'package:flutter/cupertino.dart';
 
 class AuthServices {
   static FirebaseAuth _auth = FirebaseAuth.instance;
-  static Future signInAnonymously() async {
-    AuthResult result = await _auth.signInAnonymously();
+  static Future<User?> signInAnonymously() async {
+    try {
+      var result = await _auth.signInAnonymously();
+      User? firebaseUser = result.user;
+      return firebaseUser;
+    } catch (e) {
+      print(e.toString());
+      return null; 
+    }
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+mixin FirebaseUser {
+}
 
 // class AuthService {
 //   handleAuthState() {
@@ -56,4 +54,4 @@ class AuthServices {
 //   sigOut() {
 //     FirebaseAuth.instance.signOut();
 //   }
-// }
+//}

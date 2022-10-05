@@ -155,7 +155,7 @@ class _LoginState extends State<Login> {
               ),
               child: TextButton(
                   onPressed: () {
-                    AuthService().signWithGoogle();
+                    //AuthService().signWithGoogle();
                   },
                   child: Text(
                     "Masuk",
@@ -207,9 +207,7 @@ class _LoginState extends State<Login> {
                       width: 24,
                     ),
                     TextButton(
-                        onPressed: () {
-                          Get.toNamed("");
-                        },
+                        onPressed: () {},
                         child: Text(
                           "Google",
                           style: TextStyle(

@@ -32,6 +32,7 @@ import 'package:healing_project/provaider/todo_list_provaider.dart';
 import 'package:healing_project/view/Splash_Secreen.dart';
 
 import 'package:healing_project/widget/customprogresbar.dart';
+import 'package:healing_project/wrapper.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -66,7 +67,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Hiliektrng Project',
           // home: AuthService().handleAuthState(),
-          home: Splash(),
+          home: wraper(),
           initialRoute: '/',
           routes: {
             'detailpage': (context) => detailpage(),
