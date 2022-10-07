@@ -3,10 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:get/get.dart';
+
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:healing_project/UserSeting/Login/componen/formlogin.dart';
 import 'package:healing_project/UserSeting/Login/componen/head.dart';
+import 'package:healing_project/UserSeting/signUp/signup.dart';
 import 'package:healing_project/auth_service.dart';
 import 'package:rounded_loading_button/rounded_loading_button.dart';
 
@@ -168,9 +169,7 @@ class _LoginState extends State<Login> {
           ),
           Center(
               child: TextButton(
-            onPressed: () {
-              Get.toNamed("Profil");
-            },
+            onPressed: () {},
             child: Text(
               "Lupa Pasword...?",
               style: TextStyle(
@@ -235,9 +234,7 @@ class _LoginState extends State<Login> {
                       width: 24,
                     ),
                     TextButton(
-                        onPressed: () {
-                          Get.toNamed("Profil");
-                        },
+                        onPressed: () {},
                         child: Text(
                           "Facebook",
                           style: TextStyle(
@@ -262,7 +259,10 @@ class _LoginState extends State<Login> {
                         style: TextStyle(fontSize: 15, color: Colors.white)),
                     TextButton(
                         onPressed: () {
-                          Get.toNamed("signUp");
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => signUp()));
                         },
                         child: Text(
                           "Daftar",

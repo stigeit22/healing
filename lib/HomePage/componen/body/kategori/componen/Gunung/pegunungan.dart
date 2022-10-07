@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:healing_project/HomePage/componen/headder/search.dart';
 
 import 'package:healing_project/HomePage/componen/headder/title.dart';
 
@@ -13,6 +14,7 @@ class Gunung extends StatefulWidget {
 }
 
 class _GunungState extends State<Gunung> {
+  final controller = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +34,8 @@ class _GunungState extends State<Gunung> {
                 color: Colors.white,
               ),
               onPressed: () {
-                Get.toNamed("Search");
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Search()));
               },
             )
           ],
@@ -41,6 +44,26 @@ class _GunungState extends State<Gunung> {
         body: Container(
             child: ListView(
           children: [
+            Container(
+                decoration: BoxDecoration(
+                    color: Color(0xffEBEBEB),
+                    borderRadius: BorderRadius.circular(5)),
+                child: TextFormField(
+                  cursorColor: Color(0xff5C40CC),
+                  controller: controller,
+                  decoration: InputDecoration(
+                      hintStyle: TextStyle(
+                          color: Colors.grey,
+                          fontFamily: "fonts/Poppins-Medium.ttf",
+                          fontWeight: FontWeight.bold),
+                      prefixIcon: Icon(
+                        Icons.search,
+                        color: Colors.black,
+                      ),
+                      hintText: "Telusuri",
+                      border: InputBorder.none),
+                  // onChanged: searchLokasi,
+                )),
             Column(children: [
               OptionWisata(
                   nomer: "1.  ",

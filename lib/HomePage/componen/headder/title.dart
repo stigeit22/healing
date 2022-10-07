@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:healing_project/HomePage/componen/body/Populer/PopulerOption.dart';
-
-
+import 'package:healing_project/HomePage/componen/headder/search.dart';
 
 class title extends StatefulWidget {
   @override
@@ -32,12 +31,13 @@ class _titleState extends State<title> {
           child: TextFormField(
             controller: controller,
             decoration: InputDecoration(
-              hintStyle: TextStyle(
-                     
-                      color: Colors.grey,
-                      fontFamily: "fonts/Poppins-Medium.ttf",fontWeight: FontWeight.bold),
+                hintStyle: TextStyle(
+                    color: Colors.grey,
+                    fontFamily: "fonts/Poppins-Medium.ttf",
+                    fontWeight: FontWeight.bold),
                 prefixIcon: Icon(
-                  Icons.search,color: Colors.black,
+                  Icons.search,
+                  color: Colors.black,
                 ),
                 hintText: "Telusuri",
                 suffixIcon: CircleAvatar(
@@ -45,7 +45,8 @@ class _titleState extends State<title> {
                 ),
                 border: InputBorder.none),
             onTap: () {
-              Get.toNamed("Search");
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Search()));
             },
           ),
         ),

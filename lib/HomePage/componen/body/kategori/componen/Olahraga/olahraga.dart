@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:healing_project/HomePage/componen/headder/search.dart';
 
 import 'package:healing_project/HomePage/componen/headder/title.dart';
 
@@ -32,7 +33,8 @@ class _olahragaState extends State<olahraga> {
                 color: Colors.white,
               ),
               onPressed: () {
-                Get.toNamed("Search");
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Search()));
               },
             )
           ],

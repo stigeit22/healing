@@ -1,5 +1,8 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:healing_project/HomePage/componen/body/Lokasi/componen/optionlokasi.dart';
+import 'package:healing_project/HomePage/componen/headder/componen/classWisata.dart';
 
 class pageLokasi extends StatefulWidget {
   const pageLokasi({Key? key}) : super(key: key);
@@ -9,70 +12,66 @@ class pageLokasi extends StatefulWidget {
 }
 
 class _pageLokasiState extends State<pageLokasi> {
+  List<Wisata> wisata = allWisata;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-            child: ListView(
-      children: [
-        Column(
-          children: [
-            //Text("34 Provinsi Indonesia"),
-            optionLokasi(
-                nomer: "1. ", title: "Nanggroe Aceh Darussalam", link: "link"),
-            optionLokasi(nomer: "2. ", title: "Sumatera Barat", link: "link"),
-            optionLokasi(nomer: "3. ", title: "Sumatera Utara", link: "link"),
-            optionLokasi(nomer: "4. ", title: "Sumatera Selatan", link: "link"),
-            optionLokasi(nomer: "5. ", title: "Lampung", link: "link"),
-            optionLokasi(nomer: "6. ", title: "Riau", link: "link"),
-            optionLokasi(nomer: "7. ", title: "Kepulauan Riau", link: "link"),
-            optionLokasi(nomer: "8. ", title: "Jambi", link: "link"),
-            optionLokasi(
-                nomer: "9. ", title: "Kepulauan Bangka Belitung", link: "link"),
-            optionLokasi(nomer: "10. ", title: "Bengkulu", link: "link"),
-            optionLokasi(nomer: "11. ", title: "Maluku", link: "link"),
-            optionLokasi(nomer: "12. ", title: "Maluku Utara", link: "link"),
-            optionLokasi(nomer: "13. ", title: "Papua", link: "link"),
+      child: Container(
+          margin: EdgeInsets.only(top: 10),
+          child: ListView.builder(
+            itemCount: wisata.length,
+            itemBuilder: (context, index) {
+              final Wisata = wisata[index];
+              return Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20, bottom: 15),
+                child: Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: DecorationImage(
+                            image: AssetImage(Wisata.imageUrl),
+                            fit: BoxFit.cover)),
+                    height: 132,
+                    width: double.infinity,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            Wisata.title,
+                            style: TextStyle(
+                                fontSize: 20,
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            Wisata.lokasi,
+                            style: TextStyle(
+                                fontSize: 20,
+                                color: Colors.white,
+                                fontWeight: FontWeight.normal),
+                          ),
+                        ],
+                      ),
+                    )),
+              );
+              // ListTile(
 
-            optionLokasi(nomer: "14. ", title: "Papua Barat", link: "link"),
-
-            optionLokasi(nomer: "15. ", title: "Lampung", link: "link"),
-            optionLokasi(nomer: "16. ", title: "DKI Jakarta", link: "link"),
-            optionLokasi(nomer: "17. ", title: "Banten", link: "link"),
-            optionLokasi(nomer: "18. ", title: "Jawa Barat", link: "link"),
-            optionLokasi(nomer: "19. ", title: "Jawa Tengah", link: "link"),
-            optionLokasi(nomer: "20. ", title: "Jawa Timur", link: "link"),
-            optionLokasi(
-                nomer: "21. ",
-                title: "Daerah Istimewa Yogyakarta",
-                link: "link"),
-            optionLokasi(nomer: "22. ", title: "Bali ", link: "link"),
-
-            optionLokasi(
-                nomer: "23. ", title: "Nusa Tenggara Barat", link: "link"),
-            optionLokasi(
-                nomer: "24. ", title: "Nusa Tenggara Timur", link: "link"),
-            optionLokasi(
-                nomer: "25. ", title: "Kalimantan Barat", link: "link"),
-            optionLokasi(
-                nomer: "25. ", title: "Kalimantan Selatan", link: "link"),
-            optionLokasi(
-                nomer: "26. ", title: "Kalimantan Tengah", link: "link"),
-            optionLokasi(
-                nomer: "27. ", title: "Kalimantan Timur", link: "link"),
-            optionLokasi(
-                nomer: "28. ", title: "Kalimantan Utara", link: "link"),
-            optionLokasi(nomer: "29. ", title: "Sulawesi Barat", link: "link"),
-            optionLokasi(
-                nomer: "30. ", title: "Sulawesi Tenggara", link: "link"),
-            optionLokasi(
-                nomer: "31. ", title: "Sulawesi Selatan", link: "link"),
-            optionLokasi(nomer: "32. ", title: "Sulawesi Tengah", link: "link"),
-            optionLokasi(nomer: "33. ", title: "Sulawesi Utara", link: "link"),
-            optionLokasi(nomer: "34. ", title: "Gorontalo", link: "link"),
-          ],
-        )
-      ],
-    )));
+              //   style: ListTileStyle.drawer,
+              //   onTap: () {
+              //     Navigator.pushNamed(context, Wisata.link);
+              //   },
+              //   leading: Image(image: AssetImage(Wisata.imageUrl)),
+              //   title: Text(
+              //     Wisata.title,
+              //     textAlign: TextAlign.start,
+              //   ),
+              //   subtitle: Text(Wisata.lokasi),
+              // );
+            },
+          )),
+    ));
   }
 }
