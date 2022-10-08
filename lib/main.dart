@@ -8,12 +8,14 @@ import 'package:healing_project/HomePage/componen/body/kategori/componen/Olahrag
 import 'package:healing_project/HomePage/componen/body/kategori/componen/Pantai/pantai.dart';
 import 'package:healing_project/HomePage/componen/body/kategori/componen/Sejarah/sejarah.dart';
 import 'package:healing_project/HomePage/componen/body/kategori/componen/Taman/taman.dart';
+import 'package:healing_project/UserSeting/Login/login.dart';
 import 'package:healing_project/booking/PageCekTravel.dart/PageDetailTravell/detailtravell.dart';
 import 'package:healing_project/provaider/todo_list_provaider.dart';
 import 'package:healing_project/view/Splash_Secreen.dart';
 import 'package:healing_project/wrapper.dart';
 import 'package:provider/provider.dart';
 
+import 'HomePage/componen/body/Lokasi/DetilLokasi/lokasikecamatan.dart';
 import 'pesanan/component/optionpesanan.dart';
 
 Future<void> main() async {
@@ -47,6 +49,7 @@ class MyApp extends StatelessWidget {
             'pantai': (context) => pantai(),
             'sejarah': (context) => sejarah(),
             'taman': (context) => taman(),
+            'WisataKecamatan': (context) => WisataKecamatan(),
           },
         ));
   }

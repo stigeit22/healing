@@ -156,7 +156,7 @@ class _LoginState extends State<Login> {
               ),
               child: TextButton(
                   onPressed: () {
-                    //AuthService().signWithGoogle();
+                    // AuthService().signWithGoogle();
                   },
                   child: Text(
                     "Masuk",
@@ -281,14 +281,14 @@ class _LoginState extends State<Login> {
   }
 }
 
-// Future<UserCredential> signInWithGoogle() async {
-//   final GoogleSignInAccount? googleuser = await GoogleSignIn().signIn();
-//   final GoogleSignInAuthentication? googleAuth =
-//       await googleuser?.authentication;
-//   final GoogleAuthCredential credential = GoogleAuthProvider.credential(
-//     idToken: googleAuth?.idToken,
-//     accessToken: googleAuth?.accessToken,
-//   ) as GoogleAuthCredential;
-//   Fluttertoast.showToast(msg: "Akun berhasil di buat");
-//   return await FirebaseAuth.instance.signInWithCredential(credential);
-// }
+Future<UserCredential> signInWithGoogle() async {
+  final GoogleSignInAccount? googleuser = await GoogleSignIn().signIn();
+  final GoogleSignInAuthentication? googleAuth =
+      await googleuser?.authentication;
+  final GoogleAuthCredential credential = GoogleAuthProvider.credential(
+    idToken: googleAuth?.idToken,
+    accessToken: googleAuth?.accessToken,
+  ) as GoogleAuthCredential;
+  Fluttertoast.showToast(msg: "Akun berhasil di buat");
+  return await FirebaseAuth.instance.signInWithCredential(credential);
+}

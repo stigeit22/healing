@@ -25,37 +25,42 @@ class _pageLokasiState extends State<pageLokasi> {
               final Wisata = wisata[index];
               return Padding(
                 padding: const EdgeInsets.only(left: 20, right: 20, bottom: 15),
-                child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        image: DecorationImage(
-                            image: AssetImage(Wisata.imageUrl),
-                            fit: BoxFit.cover)),
-                    height: 132,
-                    width: double.infinity,
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            Wisata.title,
-                            style: TextStyle(
-                                fontSize: 20,
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            Wisata.lokasi,
-                            style: TextStyle(
-                                fontSize: 20,
-                                color: Colors.white,
-                                fontWeight: FontWeight.normal),
-                          ),
-                        ],
-                      ),
-                    )),
+                child: GestureDetector(
+                  child: Container(
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          image: DecorationImage(
+                              image: AssetImage(Wisata.imageUrl),
+                              fit: BoxFit.cover)),
+                      height: 132,
+                      width: double.infinity,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              Wisata.title,
+                              style: TextStyle(
+                                  fontSize: 20,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              Wisata.lokasi,
+                              style: TextStyle(
+                                  fontSize: 20,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.normal),
+                            ),
+                          ],
+                        ),
+                      )),
+                  onTap: () {
+                    Navigator.pushNamed(context, Wisata.link);
+                  },
+                ),
               );
               // ListTile(
 

@@ -21,7 +21,7 @@ const allWisata = [
       title: "Tarogong Kidul",
       lokasi: "20 Destinasi Wisata",
       rate: "55",
-      link: "detailpage"),
+      link: "WisataKecamatan"),
   Wisata(
       nomer: "2.  ",
       imageUrl: "images/image 19.png",
