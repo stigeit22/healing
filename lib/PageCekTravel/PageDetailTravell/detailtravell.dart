@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:healing_project/booking/PageCekTravel.dart/PageDetailTravell/pageTabbar/fitur.dart';
-import 'package:healing_project/booking/PageCekTravel.dart/PageDetailTravell/pageTabbar/rute.dart';
+import 'package:healing_project/PageCekTravel/PageDetailTravell/pageTabbar/fitur.dart';
+import 'package:healing_project/PageCekTravel/PageDetailTravell/pageTabbar/rute.dart';
 
 import '../PagePembayaran/datapemesan.dart';
 import 'pageTabbar/ticket.dart';

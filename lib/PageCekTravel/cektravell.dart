@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:healing_project/booking/PageCekTravel.dart/componen/classlokasi.dart';
-import 'package:healing_project/booking/PageCekTravel.dart/tiket/tiketoption.dart';
+import 'package:healing_project/PageCekTravel/componen/classlokasi.dart';
+import 'package:healing_project/PageCekTravel/tiket/tiketoption.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
 class cektravell extends StatelessWidget {

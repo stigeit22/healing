@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:healing_project/HomePage/componen/body/Populer/PopulerOption.dart';
+import 'package:healing_project/HomePage/componen/Populer/PopulerOption.dart';
 import 'package:healing_project/HomePage/componen/headder/search.dart';
 
 class title extends StatefulWidget {

@@ -4,7 +4,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
 import 'package:healing_project/UserSeting/Profil/componen/setting/InfoAkun/editdata.dart';
 
-import '../../booking/PageCekTravel.dart/PagePembayaran/MetodePembayaran/BankBCA/metodebayarBCA.dart';
+import '../../PageCekTravel/PagePembayaran/MetodePembayaran/BankBCA/metodebayarBCA.dart';
 import 'componen/setting/InfoAkun/informasiakun.dart';
 import 'componen/setting/setting.dart';
 

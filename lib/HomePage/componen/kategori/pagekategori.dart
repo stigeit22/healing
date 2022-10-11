@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:healing_project/HomePage/componen/body/kategori/componen/ptionkategori.dart';
+import 'package:healing_project/HomePage/componen/kategori/componen/ptionkategori.dart';
 
 class pagekategori extends StatefulWidget {
   const pagekategori({Key? key}) : super(key: key);

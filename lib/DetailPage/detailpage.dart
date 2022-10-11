@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:get/get_connect/sockets/src/socket_notifier.dart';
 import 'package:healing_project/DetailPage/Componen/bodydetail.dart';
 import 'package:healing_project/booking/Pagebooking.dart';
-
 import '../onboarding/onboarding.dart';
 
 class detailpage extends StatefulWidget {

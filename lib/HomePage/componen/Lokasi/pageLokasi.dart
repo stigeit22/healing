@@ -1,7 +1,7 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
-import 'package:healing_project/HomePage/componen/body/Lokasi/componen/optionlokasi.dart';
+import 'package:healing_project/HomePage/componen/Lokasi/componen/optionlokasi.dart';
 import 'package:healing_project/HomePage/componen/headder/componen/classWisata.dart';
 
 class pageLokasi extends StatefulWidget {

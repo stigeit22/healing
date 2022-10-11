@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:healing_project/DetailPage/detailpage.dart';
-import 'package:healing_project/booking/PageCekTravel.dart/cektravell.dart';
+import 'package:healing_project/PageCekTravel/cektravell.dart';
 
 class bottombook extends StatelessWidget {
   const bottombook({Key? key}) : super(key: key);

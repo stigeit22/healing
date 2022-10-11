@@ -1,21 +1,21 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:healing_project/DetailPage/detailpage.dart';
-import 'package:healing_project/HomePage/componen/body/kategori/componen/Gunung/pegunungan.dart';
-import 'package:healing_project/HomePage/componen/body/kategori/componen/Hutan/hutan.dart';
-import 'package:healing_project/HomePage/componen/body/kategori/componen/Kuliner/kuliner.dart';
-import 'package:healing_project/HomePage/componen/body/kategori/componen/Olahraga/olahraga.dart';
-import 'package:healing_project/HomePage/componen/body/kategori/componen/Pantai/pantai.dart';
-import 'package:healing_project/HomePage/componen/body/kategori/componen/Sejarah/sejarah.dart';
-import 'package:healing_project/HomePage/componen/body/kategori/componen/Taman/taman.dart';
+import 'package:healing_project/HomePage/componen/kategori/componen/Gunung/pegunungan.dart';
+import 'package:healing_project/HomePage/componen/kategori/componen/Hutan/hutan.dart';
+import 'package:healing_project/HomePage/componen/kategori/componen/Kuliner/kuliner.dart';
+import 'package:healing_project/HomePage/componen/kategori/componen/Olahraga/olahraga.dart';
+import 'package:healing_project/HomePage/componen/kategori/componen/Pantai/pantai.dart';
+import 'package:healing_project/HomePage/componen/kategori/componen/Sejarah/sejarah.dart';
+import 'package:healing_project/HomePage/componen/kategori/componen/Taman/taman.dart';
 import 'package:healing_project/UserSeting/Login/login.dart';
-import 'package:healing_project/booking/PageCekTravel.dart/PageDetailTravell/detailtravell.dart';
+import 'package:healing_project/PageCekTravel/PageDetailTravell/detailtravell.dart';
 import 'package:healing_project/provaider/todo_list_provaider.dart';
 import 'package:healing_project/view/Splash_Secreen.dart';
 import 'package:healing_project/wrapper.dart';
 import 'package:provider/provider.dart';
 
-import 'HomePage/componen/body/Lokasi/DetilLokasi/lokasikecamatan.dart';
+import 'HomePage/componen/Lokasi/DetilLokasi/lokasikecamatan.dart';
 import 'pesanan/component/optionpesanan.dart';
 
 Future<void> main() async {

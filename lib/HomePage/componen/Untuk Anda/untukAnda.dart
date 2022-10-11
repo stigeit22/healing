@@ -1,9 +1,8 @@
-import 'package:carousel_slider/carousel_controller.dart';
+
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 import 'package:healing_project/widget/homeOption.dart';
-
 class untukAnda extends StatelessWidget {
   //const untukAnda({Key? key}) : super(key: key);
   int _current = 0;

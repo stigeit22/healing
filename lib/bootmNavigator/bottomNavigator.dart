@@ -1,18 +1,14 @@
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:healing_project/HomePage/componen/body/Lokasi/pageLokasi.dart';
+import 'package:healing_project/HomePage/componen/Lokasi/pageLokasi.dart';
 import 'package:healing_project/booking/Pagebooking.dart';
 import 'package:healing_project/pesanan/component/tabbarpesanan.dart';
-import 'package:healing_project/pesanan/pesanan.dart';
-
-import '../HomePage/componen/body/Etika/panduan.dart';
-import '../HomePage/componen/body/Populer/pagePopuler.dart';
-import '../HomePage/componen/body/history/history.dart';
-import '../HomePage/componen/body/kategori/pagekategori.dart';
+import '../HomePage/componen/Populer/pagePopuler.dart';
+import '../HomePage/componen/history/history.dart';
+import '../HomePage/componen/kategori/pagekategori.dart';
 import '../HomePage/componen/headder/tabbar.dart';
 import 'dart:async';
-
 import '../UserSeting/Profil/profil.dart';
 import '../UserSeting/signUp/signup.dart';
 

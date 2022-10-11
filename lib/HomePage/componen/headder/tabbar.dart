@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:healing_project/HomePage/componen/body/Lokasi/pageLokasi.dart';
-import 'package:healing_project/HomePage/componen/body/Populer/pagePopuler.dart';
-import 'package:healing_project/HomePage/componen/body/Untuk%20Anda/untukAnda.dart';
+import 'package:healing_project/HomePage/componen/Lokasi/pageLokasi.dart';
+import 'package:healing_project/HomePage/componen/Populer/pagePopuler.dart';
+import 'package:healing_project/HomePage/componen/Untuk%20Anda/untukAnda.dart';
 
-
-import '../body/kategori/pagekategori.dart';
+import '../kategori/pagekategori.dart';
 import 'title.dart';
 
 class tabbar extends StatefulWidget {
@@ -44,9 +43,10 @@ class _tabbarState extends State<tabbar> with SingleTickerProviderStateMixin {
                   children: [
                     TabBar(
                       labelStyle: TextStyle(
-                      fontSize: 15,
-                      color: Colors.black,
-                      fontFamily: "fonts/Poppins-Medium.ttf",fontWeight: FontWeight.bold),
+                          fontSize: 15,
+                          color: Colors.black,
+                          fontFamily: "fonts/Poppins-Medium.ttf",
+                          fontWeight: FontWeight.bold),
                       labelColor: Colors.black,
                       indicatorColor: Colors.black,
                       controller: tabController,
@@ -71,7 +71,12 @@ class _tabbarState extends State<tabbar> with SingleTickerProviderStateMixin {
               Expanded(
                 child: TabBarView(
                   controller: tabController,
-                  children: <Widget>[untukAnda(), pupuler(),pageLokasi(), pagekategori()],
+                  children: <Widget>[
+                    untukAnda(),
+                    pupuler(),
+                    pageLokasi(),
+                    pagekategori()
+                  ],
                 ),
               ),
             ],

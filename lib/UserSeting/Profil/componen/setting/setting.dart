@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-import '../../../../booking/PageCekTravel.dart/PagePembayaran/MetodePembayaran/BankBCA/metodebayarBCA.dart';
+import '../../../../PageCekTravel/PagePembayaran/MetodePembayaran/BankBCA/metodebayarBCA.dart';
 import 'InfoAkun/informasiakun.dart';
 
 class setting extends StatelessWidget {
