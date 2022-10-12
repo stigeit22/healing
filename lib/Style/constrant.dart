@@ -1,3 +1,3 @@
 import 'package:flutter/cupertino.dart';
 
-class constrat {}
+const kpurple = Color(0xff5C40CC);

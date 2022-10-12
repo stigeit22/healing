@@ -3,12 +3,12 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:healing_project/provaider/todo_list_provaider.dart';
+import 'package:healing_project/provider/todo_list_provaider.dart';
 import 'package:healing_project/widget/info_ulasan_widget.dart';
 import 'package:provider/provider.dart';
 import 'package:uuid/uuid.dart';
 
-import '../DetailPage/Componen/Ulasan/Model/todo_Model.dart';
+import '../View/detail_page/componens/Ulasan/Model/todo_Model.dart';
 
 class AddTodoWidget extends StatefulWidget {
   final String title;

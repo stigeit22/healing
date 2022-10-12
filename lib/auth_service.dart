@@ -3,8 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/widgets.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:healing_project/UserSeting/Login/login.dart';
-import 'package:healing_project/bootmNavigator/bottomNavigator.dart';
+import 'package:healing_project/View/bootm_navigator/bottomNavigator.dart';
 import 'package:flutter/cupertino.dart';
 
 class AuthServices {
