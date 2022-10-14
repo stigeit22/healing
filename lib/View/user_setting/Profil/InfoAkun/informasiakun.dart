@@ -1,10 +1,10 @@
 import 'dart:ui';
 
+import 'package:cool_alert/cool_alert.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:healing_project/View/metode_pembayaran/BankBCA/metodebayarBCA.dart';
-
 
 class infoakun extends StatelessWidget {
   const infoakun({super.key});
@@ -32,12 +32,15 @@ class infoakun extends StatelessWidget {
                       style:
                           TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                     ),
-                    Text(
-                      'UBAH',
-                      style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          color: Color(0xff5C40CC)),
+                    TextButton(
+                      child: Text(
+                        'UBAH',
+                        style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xff5C40CC)),
+                      ),
+                      onPressed: () {},
                     ),
                   ],
                 ),

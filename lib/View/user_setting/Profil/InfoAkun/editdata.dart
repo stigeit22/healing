@@ -1,3 +1,4 @@
+import 'package:cool_alert/cool_alert.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -52,7 +53,6 @@ class ubahdata extends StatelessWidget {
                       child: Column(
                         children: [
                           TextField(
-                            onTap: () {},
                             cursorColor: Colors.black,
                             autofocus: false,
                             decoration: InputDecoration(
@@ -74,7 +74,6 @@ class ubahdata extends StatelessWidget {
                             height: 20,
                           ),
                           TextField(
-                            onTap: () {},
                             cursorColor: Colors.black,
                             autofocus: false,
                             decoration: InputDecoration(
@@ -96,7 +95,6 @@ class ubahdata extends StatelessWidget {
                             height: 20,
                           ),
                           TextField(
-                            onTap: () {},
                             cursorColor: Colors.black,
                             autofocus: false,
                             decoration: InputDecoration(
@@ -118,7 +116,6 @@ class ubahdata extends StatelessWidget {
                             height: 20,
                           ),
                           TextField(
-                            onTap: () {},
                             cursorColor: Colors.black,
                             autofocus: false,
                             decoration: InputDecoration(
@@ -140,7 +137,6 @@ class ubahdata extends StatelessWidget {
                             height: 20,
                           ),
                           TextField(
-                            onTap: () {},
                             cursorColor: Colors.black,
                             autofocus: false,
                             decoration: InputDecoration(
@@ -175,7 +171,13 @@ class ubahdata extends StatelessWidget {
                         height: 40,
                         width: double.infinity,
                         child: TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              CoolAlert.show(
+                                context: context,
+                                type: CoolAlertType.success,
+                                text: "Data Berhasil Dirubah",
+                              );
+                            },
                             child: Text('Simpan',
                                 style: TextStyle(
                                   color: Colors.white,

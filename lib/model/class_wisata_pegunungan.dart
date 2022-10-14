@@ -19,7 +19,7 @@ const allWisata_Pegunungan = [
       nomer: "1.  ",
       imageUrl: "images/Gpapandayan.jpg",
       title: "Gunung Papandayan",
-      lokasi: "Garut",
+      lokasi: "Garut, Jawa Barat",
       rate: "55",
       link: "detailpage"),
   Wisata_Pegunungan(

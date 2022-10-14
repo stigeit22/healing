@@ -96,7 +96,7 @@ class _kulinerState extends State<kuliner> {
                                           Text(
                                             Wisata_Pegunungan.nomer,
                                             style: TextStyle(
-                                                fontSize: 18,
+                                                fontSize: 14,
                                                 color: Color(0xff1F1449),
                                                 fontFamily:
                                                     "fonts/Poppins-Medium.ttf"),

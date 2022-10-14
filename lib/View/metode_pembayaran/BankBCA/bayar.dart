@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:cool_alert/cool_alert.dart';
 import 'package:flutter/material.dart';
 import 'package:healing_project/View/bootm_navigator/bottomNavigator.dart';
 import 'package:healing_project/View/pesanan/tabbarpesanan.dart';
@@ -245,6 +246,11 @@ class _transferBcaState extends State<transferBca>
                           context,
                           MaterialPageRoute(
                               builder: (context) => tabbarpesanan()));
+                      CoolAlert.show(
+                        context: context,
+                        type: CoolAlertType.success,
+                        text: "Pesanan Berhasil",
+                      );
                     },
                     child: Text(
                       " Cek Pesan",

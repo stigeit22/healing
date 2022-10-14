@@ -8,7 +8,9 @@ import 'package:healing_project/View/home_page/componens/kategori/componen/Olahr
 import 'package:healing_project/View/home_page/componens/kategori/componen/Pantai/pantai.dart';
 import 'package:healing_project/View/home_page/componens/kategori/componen/Sejarah/sejarah.dart';
 import 'package:healing_project/View/home_page/componens/kategori/componen/Taman/taman.dart';
+import 'package:healing_project/View/page_cek_travel/filter_travel.dart';
 import 'package:healing_project/View/page_detail_travell/detailtravell.dart';
+import 'package:healing_project/alert/alret_filter.dart';
 import 'package:healing_project/provider/todo_list_provaider.dart';
 import 'package:healing_project/View/splash/splash_secreen.dart';
 import 'package:healing_project/wrapper.dart';

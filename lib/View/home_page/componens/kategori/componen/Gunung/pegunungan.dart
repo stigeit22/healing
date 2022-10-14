@@ -138,21 +138,22 @@ class _GunungState extends State<Gunung> {
                                             children: [
                                               Text(
                                                 Wisata_Pegunungan.title,
-                                                overflow: TextOverflow.ellipsis,
                                                 style: TextStyle(
-                                                    fontSize: 16,
+                                                    fontSize: 14,
                                                     color: Color(0xff1F1449),
                                                     fontFamily:
                                                         "fonts/Poppins-Medium.ttf"),
                                               ),
-                                              Text(
-                                                Wisata_Pegunungan.lokasi,
-                                                overflow: TextOverflow.ellipsis,
-                                                style: TextStyle(
-                                                    fontSize: 12,
-                                                    color: Color(0xff9698A9),
-                                                    fontFamily:
-                                                        "fonts/Poppins-Light.ttf"),
+                                              Container(
+                                                child: SelectableText(
+                                                  Wisata_Pegunungan.lokasi,
+                                                  style: TextStyle(
+                                                      fontSize: 12,
+                                                      color: Color(0xff9698A9),
+                                                      fontFamily:
+                                                          "fonts/Poppins-Light.ttf"),
+                                                  textAlign: TextAlign.left,
+                                                ),
                                               ),
                                             ],
                                           ),
@@ -166,11 +167,15 @@ class _GunungState extends State<Gunung> {
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Icon(Icons.star, color: Colors.yellow),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.yellow,
+                                        size: 20,
+                                      ),
                                       Text(
                                         Wisata_Pegunungan.rate,
                                         style: TextStyle(
-                                            fontSize: 14,
+                                            fontSize: 12,
                                             color: Color(0xff1F1449),
                                             fontFamily:
                                                 "fonts/Poppins-Medium.ttf"),

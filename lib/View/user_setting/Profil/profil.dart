@@ -15,14 +15,6 @@ class Profil extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Color(0xff5C40CC),
           title: Text("My Profile"),
-          leading: IconButton(
-              onPressed: () {
-                Get.toNamed("buttomNavigator");
-              },
-              icon: Icon(
-                Icons.arrow_back,
-                color: Colors.white,
-              )),
           actions: [
             PopupMenuButton(
                 itemBuilder: (context) => [

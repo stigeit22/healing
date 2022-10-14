@@ -1,11 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:healing_project/Style/constrant.dart';
+import 'package:healing_project/View/page_cek_travel/filter_travel.dart';
 import 'package:healing_project/model/class_pic_loksi.dart';
 import 'package:healing_project/widget/tiketoption.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
-class cektravell extends StatelessWidget {
+class cektravell extends StatefulWidget {
   const cektravell({Key? key}) : super(key: key);
+
+  @override
+  State<cektravell> createState() => _cektravellState();
+}
+
+class _cektravellState extends State<cektravell> {
+  bool check = false;
+  bool check2 = false;
+  bool check3 = false;
 
   @override
   Widget build(BuildContext context) {
@@ -120,7 +131,15 @@ class cektravell extends StatelessWidget {
                 Row(
                   children: [
                     Icon(Icons.filter_sharp),
-                    Text("Filter"),
+                    TextButton(
+                      child: Text("Filter"),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => filter_travel()));
+                      },
+                    ),
                   ],
                 ),
                 VerticalDivider(
@@ -130,10 +149,149 @@ class cektravell extends StatelessWidget {
                 Row(
                   children: [
                     Icon(Icons.filter_sharp),
-                    Text("Urutan"),
+                    TextButton(
+                      child: Text("Urutkan"),
+                      onPressed: () {
+                        showalertdyalog("widget.title");
+                      },
+                    ),
                   ],
                 )
               ]))
         ]);
+  }
+
+  void showalertdyalogFilter(String title) {
+    showDialog(
+        context: context,
+        builder: (setState) {
+          return StatefulBuilder(builder: (context, setState) {
+            return AlertDialog(
+              title: Text("Filter Sesuai"),
+              content: Container(
+                height: 300,
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("Ac"),
+                        Checkbox(
+                            value: check,
+                            checkColor: Colors.white,
+                            focusColor: Colors.green,
+                            activeColor: kpurple,
+                            onChanged: (value) {
+                              setState(() {
+                                check = value!;
+                              });
+                            })
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("Berangkat Lebih awal"),
+                        Checkbox(
+                            value: check2,
+                            checkColor: Colors.white,
+                            focusColor: Colors.green,
+                            activeColor: kpurple,
+                            onChanged: (value) {
+                              setState(() {
+                                check2 = value!;
+                              });
+                            })
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("ad"),
+                        Checkbox(
+                            value: check3,
+                            checkColor: Colors.white,
+                            focusColor: Colors.green,
+                            activeColor: kpurple,
+                            onChanged: (value) {
+                              setState(() {
+                                check3 = value!;
+                              });
+                            })
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            );
+          });
+        });
+  }
+
+  void showalertdyalog(String title) {
+    showDialog(
+        context: context,
+        builder: (setState) {
+          return StatefulBuilder(builder: (context, setState) {
+            return AlertDialog(
+              title: Text("Filter Sesuai"),
+              content: Container(
+                height: 300,
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("Termurah"),
+                        Checkbox(
+                            value: check,
+                            checkColor: Colors.white,
+                            focusColor: Colors.green,
+                            activeColor: kpurple,
+                            onChanged: (value) {
+                              setState(() {
+                                check = value!;
+                              });
+                            })
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("Berangkat Paling Awal"),
+                        Checkbox(
+                            value: check2,
+                            checkColor: Colors.white,
+                            focusColor: Colors.green,
+                            activeColor: kpurple,
+                            onChanged: (value) {
+                              setState(() {
+                                check2 = value!;
+                              });
+                            })
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("Berangkat Paling Akhir"),
+                        Checkbox(
+                            value: check3,
+                            checkColor: Colors.white,
+                            focusColor: Colors.green,
+                            activeColor: kpurple,
+                            onChanged: (value) {
+                              setState(() {
+                                check3 = value!;
+                              });
+                            })
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            );
+          });
+        });
   }
 }

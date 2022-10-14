@@ -130,7 +130,7 @@ class _pantaiState extends State<pantai> {
                                               Text(
                                                 Wisata_Pegunungan.title,
                                                 style: TextStyle(
-                                                    fontSize: 18,
+                                                    fontSize: 14,
                                                     color: Color(0xff1F1449),
                                                     fontFamily:
                                                         "fonts/Poppins-Medium.ttf"),
