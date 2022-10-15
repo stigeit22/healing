@@ -1,13 +1,15 @@
-
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 
 import 'package:healing_project/widget/homeOption.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
 class untukAnda extends StatelessWidget {
   //const untukAnda({Key? key}) : super(key: key);
   int _current = 0;
   final CarouselController _controller = CarouselController();
-  final List<Widget> imagepromo = [
+  final List<Container> imagepromo = [
     Container(
         width: double.infinity,
         height: double.infinity,
@@ -38,44 +40,48 @@ class untukAnda extends StatelessWidget {
           body: Container(
         child: Column(
           children: <Widget>[
+            Column(
+              children: [
+                CarouselSlider(
+                  items: imagepromo,
+                  carouselController: _controller,
+                  options: CarouselOptions(
+                      autoPlay: true,
+                      enlargeCenterPage: true,
+                      aspectRatio: 3.0,
+                      onPageChanged: (index, reason) {
+                        setState(() {
+                          _current = index;
+                        });
+                      }),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: imagepromo.asMap().entries.map((entry) {
+                    return GestureDetector(
+                      onTap: () => _controller.animateToPage(entry.key),
+                      child: Container(
+                        width: 12.0,
+                        height: 12.0,
+                        margin: EdgeInsets.symmetric(
+                            vertical: 8.0, horizontal: 4.0),
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color:
+                                (Theme.of(context).brightness == Brightness.dark
+                                        ? Colors.white
+                                        : Colors.black)
+                                    .withOpacity(
+                                        _current == entry.key ? 0.9 : 0.4)),
+                      ),
+                    );
+                  }).toList(),
+                ),
+              ],
+            ),
             Expanded(
               child: ListView(
                 children: <Widget>[
-                  CarouselSlider(
-                    items: imagepromo,
-                    carouselController: _controller,
-                    options: CarouselOptions(
-                        autoPlay: true,
-                        enlargeCenterPage: true,
-                        aspectRatio: 3.0,
-                        onPageChanged: (index, reason) {
-                          setState(() {
-                            _current = index;
-                          });
-                        }),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: imagepromo.asMap().entries.map((entry) {
-                      return GestureDetector(
-                        onTap: () => _controller.animateToPage(entry.key),
-                        child: Container(
-                          width: 12.0,
-                          height: 12.0,
-                          margin: EdgeInsets.symmetric(
-                              vertical: 8.0, horizontal: 4.0),
-                          decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: (Theme.of(context).brightness ==
-                                          Brightness.dark
-                                      ? Colors.white
-                                      : Colors.black)
-                                  .withOpacity(
-                                      _current == entry.key ? 0.9 : 0.4)),
-                        ),
-                      );
-                    }).toList(),
-                  ),
                   Container(
                       child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,

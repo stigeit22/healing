@@ -40,7 +40,7 @@ const allWisata = [
       nomer: "4.  ",
       imageUrl: "images/image 19.png",
       title: "Garut Kota",
-      lokasi: "14Destinasi Wisata",
+      lokasi: "14 Destinasi Wisata",
       rate: "55",
       link: "detailpage"),
   Wisata(

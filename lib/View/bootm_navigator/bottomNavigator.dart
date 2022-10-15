@@ -1,6 +1,7 @@
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:healing_project/Style/constrant.dart';
 import 'package:healing_project/View/home_page/componens/Lokasi/pageLokasi.dart';
 import 'package:healing_project/View/booking/page_booking.dart';
 import 'package:healing_project/View/pesanan/tabbarpesanan.dart';
@@ -10,7 +11,6 @@ import '../home_page/componens/history/history.dart';
 import '../home_page/componens/kategori/pagekategori.dart';
 import '../home_page/componens/headder/tabbar.dart';
 import 'dart:async';
-
 
 class buttomNavigator extends StatefulWidget {
   buttomNavigator({Key? key}) : super(key: key);
@@ -65,7 +65,7 @@ class _buttomNavigatorState extends State<buttomNavigator> {
           body: pages[index],
           bottomNavigationBar: ConvexAppBar(
             color: Colors.black,
-            activeColor: Colors.black,
+            activeColor: kpurple,
             style: TabStyle.react,
             backgroundColor: Color(0xffD9D9D9),
             items: [

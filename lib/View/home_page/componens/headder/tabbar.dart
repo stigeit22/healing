@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:healing_project/View/home_page/componens/Lokasi/pageLokasi.dart';
 import 'package:healing_project/View/home_page/componens/Populer/pagePopuler.dart';
 import 'package:healing_project/View/home_page/componens/Untuk%20Anda/untukAnda.dart';
+import 'package:healing_project/style/constrant.dart';
 
 import '../kategori/pagekategori.dart';
 import 'title.dart';
@@ -44,11 +45,12 @@ class _tabbarState extends State<tabbar> with SingleTickerProviderStateMixin {
                     TabBar(
                       labelStyle: TextStyle(
                           fontSize: 15,
-                          color: Colors.black,
                           fontFamily: "fonts/Poppins-Medium.ttf",
                           fontWeight: FontWeight.bold),
-                      labelColor: Colors.black,
-                      indicatorColor: Colors.black,
+                      labelColor: kpurple,
+                      unselectedLabelColor: Colors.black,
+                      indicatorColor: kpurple,
+                      indicatorWeight: 3.1,
                       controller: tabController,
                       tabs: [
                         Tab(
@@ -75,7 +77,7 @@ class _tabbarState extends State<tabbar> with SingleTickerProviderStateMixin {
                     untukAnda(),
                     pupuler(),
                     pageLokasi(),
-                    pagekategori()
+                    pagekategori(),
                   ],
                 ),
               ),
