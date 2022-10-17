@@ -2,6 +2,7 @@ import 'package:cool_alert/cool_alert.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:healing_project/style/constrant.dart';
 
 class ubahdata extends StatelessWidget {
   const ubahdata({super.key});
@@ -14,25 +15,84 @@ class ubahdata extends StatelessWidget {
           backgroundColor: Color(0xff5C40CC),
         ),
         body: Container(
-          color: Color(0xffD9D9D9),
           child: ListView(
             children: [
+              Padding(
+                padding: const EdgeInsets.only(
+                  top: 20,
+                  left: 20,
+                ),
+                child: Text(
+                  'Foto Profil',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                ),
+              ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  Container(
+                    margin: EdgeInsets.only(left: 20, right: 20, top: 10),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey, //color of shadow
+                          spreadRadius: 0.2, //spread radius
+                          blurRadius: 3, // blur radius
+                          //offset: Offset(0, 1), // changes position of shadow
+                          //first paramerter of offset is left-right
+                          //second parameter is top to down
+                        ),
+                        //you can set more BoxShadow() here
+                      ],
+                    ),
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                              border: Border(
+                                  right: BorderSide(
+                                      color: Colors.grey, width: 0.2))),
+                          height: 86,
+                          width: 100,
+                          padding: EdgeInsets.all(15),
+                          child: CircleAvatar(
+                            backgroundColor: kpurple,
+                            child: Text(
+                              'T',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 40),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(left: 90),
+                          child: TextButton(
+                            onPressed: () {},
+                            child: Text(
+                              'UBAH',
+                              style: TextStyle(color: kpurple),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                   Padding(
                     padding: const EdgeInsets.only(
-                      top: 20,
-                      left: 30,
+                      top: 10,
+                      left: 20,
                     ),
                     child: Text(
-                      'PERBAHARUI DATA',
+                      'Data Diri',
                       style:
                           TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(20),
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 20, top: 10),
                     child: Container(
                       padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(

@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:healing_project/View/home_page/componens/headder/search.dart';
 
 import 'package:healing_project/View/home_page/componens/headder/title.dart';
-import 'package:healing_project/View/onboarding/onboarding.dart';
+import 'package:healing_project/View/welcome_page/onboarding.dart';
 import 'package:healing_project/model/class_wisata_pegunungan.dart';
 import 'package:healing_project/style/constrant.dart';
 

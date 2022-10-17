@@ -161,73 +161,6 @@ class _cektravellState extends State<cektravell> {
         ]);
   }
 
-  void showalertdyalogFilter(String title) {
-    showDialog(
-        context: context,
-        builder: (setState) {
-          return StatefulBuilder(builder: (context, setState) {
-            return AlertDialog(
-              title: Text("Filter Sesuai"),
-              content: Container(
-                height: 300,
-                child: Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text("Ac"),
-                        Checkbox(
-                            value: check,
-                            checkColor: Colors.white,
-                            focusColor: Colors.green,
-                            activeColor: kpurple,
-                            onChanged: (value) {
-                              setState(() {
-                                check = value!;
-                              });
-                            })
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text("Berangkat Lebih awal"),
-                        Checkbox(
-                            value: check2,
-                            checkColor: Colors.white,
-                            focusColor: Colors.green,
-                            activeColor: kpurple,
-                            onChanged: (value) {
-                              setState(() {
-                                check2 = value!;
-                              });
-                            })
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text("ad"),
-                        Checkbox(
-                            value: check3,
-                            checkColor: Colors.white,
-                            focusColor: Colors.green,
-                            activeColor: kpurple,
-                            onChanged: (value) {
-                              setState(() {
-                                check3 = value!;
-                              });
-                            })
-                      ],
-                    )
-                  ],
-                ),
-              ),
-            );
-          });
-        });
-  }
-
   void showalertdyalog(String title) {
     showDialog(
         context: context,
@@ -236,7 +169,7 @@ class _cektravellState extends State<cektravell> {
             return AlertDialog(
               title: Text("Filter Sesuai"),
               content: Container(
-                height: 300,
+                height: 250,
                 child: Column(
                   children: [
                     Row(
@@ -286,6 +219,21 @@ class _cektravellState extends State<cektravell> {
                               });
                             })
                       ],
+                    ),
+                    SizedBox(height: 30),
+                    Container(
+                      width: 85,
+                      height: 35,
+                      decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          'Simpan',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
                     )
                   ],
                 ),

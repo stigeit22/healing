@@ -12,10 +12,11 @@ import 'package:healing_project/View/page_cek_travel/filter_travel.dart';
 import 'package:healing_project/View/page_detail_travell/detailtravell.dart';
 import 'package:healing_project/alert/alret_filter.dart';
 import 'package:healing_project/provider/todo_list_provaider.dart';
-import 'package:healing_project/View/splash/splash_secreen.dart';
+import 'package:healing_project/View/welcome_page/splash_secreen.dart';
 import 'package:healing_project/wrapper.dart';
 import 'package:provider/provider.dart';
 import 'View/home_page/componens/Lokasi/DetilLokasi/lokasikecamatan.dart';
+import 'View/home_page/componens/Lokasi/DetilLokasi/tabbar_kategori.dart';
 import 'widget/optionpesanan.dart';
 
 Future<void> main() async {
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Hiliektrng Project',
           // home: AuthService().handleAuthState(),
-          home: Splash(),
+          home: tabbar_kategori(),
           initialRoute: '/',
           routes: {
             'detailpage': (context) => detailpage(),

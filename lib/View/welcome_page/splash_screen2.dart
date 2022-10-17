@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:healing_project/View/onboarding/onboarding.dart';
+import 'package:healing_project/View/welcome_page/onboarding.dart';
 
 class Splash2 extends StatefulWidget {
   Splash2({Key? key}) : super(key: key);

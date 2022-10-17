@@ -5,7 +5,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:rounded_loading_button/rounded_loading_button.dart';
-import '../signUp/signup.dart';
+import 'signup.dart';
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
 

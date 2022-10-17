@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:healing_project/View/splash/splash_screen2.dart';
+import 'package:healing_project/View/welcome_page/splash_screen2.dart';
 
 class Splash extends StatefulWidget {
   Splash({Key? key}) : super(key: key);

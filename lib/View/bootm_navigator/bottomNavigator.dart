@@ -5,7 +5,7 @@ import 'package:healing_project/Style/constrant.dart';
 import 'package:healing_project/View/home_page/componens/Lokasi/pageLokasi.dart';
 import 'package:healing_project/View/booking/page_booking.dart';
 import 'package:healing_project/View/pesanan/tabbarpesanan.dart';
-import 'package:healing_project/View/user_setting/Profil/profil.dart';
+import 'package:healing_project/View/user_setting/profil.dart';
 import '../home_page/componens/Populer/pagePopuler.dart';
 import '../home_page/componens/history/history.dart';
 import '../home_page/componens/kategori/pagekategori.dart';

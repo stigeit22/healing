@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:healing_project/View/detail_page/componens/bodydetail.dart';
 import 'package:healing_project/View/booking/page_booking.dart';
 import 'package:healing_project/style/constrant.dart';
-import '../onboarding/onboarding.dart';
+import '../welcome_page/onboarding.dart';
 
 class detailpage extends StatefulWidget {
   const detailpage({Key? key}) : super(key: key);
